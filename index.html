@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="./tencss/ten.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+	<div class="row row-centered container">
+		<div class="col-10">
+			<h1 class="centered">Hi I'm Dustin</h1>
+
+		</div>
+		<div class="col-10">
+			<h1 class="centered">Projects</h1>
+		</div>
+	    <div class="col-10 lg-col-3">
+	        <div class="card">
+	        	<div class="card-header">
+	        		<h2 class="centered">Mamba</h2>
+	        	</div>
+	        	<div class="card-image">
+	        		<img src="./mamba-screenshot.png">
+	        	</div>
+	        	<div class="card-content">
+	        		<p>Mamba is a simple blogging platform built on the Flask framework.</p>
+	        	</div>
+	        	<div class="card-footer-buttons one-button">
+					<a target="_blank" href="https://github.com/nivesnine/mamba"><button>Codebase</button></a>
+				</div>
+	        </div>
+	    </div>
+	    <div class="col-10 lg-col-3">
+	        <div class="card">
+	        	<div class="card-header">
+	        		<h2 class="centered">openLIMS</h2>
+	        	</div>
+	        	<div class="card-image">
+	        		<img src="./open-lims-screenshot.png">
+	        	</div>
+	        	<div class="card-content">
+	        		<p>OpenLIMS is an open source Lab Information Management System.</p>
+	        	</div>
+	        	<div class="card-footer-buttons one-button">
+					<a target="_blank" href="https://github.com/nivesnine/openlins"><button>Codebase</button></a>
+				</div>
+	        </div>
+	    </div>
+	    <div class="col-10 lg-col-3">
+	        <div class="card">
+	        	<div class="card-header">
+	        		<h2 class="centered">TenCSS</h2>
+	        	</div>
+	        	<div class="card-image">
+	        		<img src="./tencss-screenshot.png">
+	        	</div>
+	        	<div class="card-content">
+	        		<p>TenCSS, flex with 10 columns for easy counting.</p>
+	        	</div>
+	        	<div class="card-footer-buttons one-button">
+					<a target="_blank" href="https://github.com/nivesnine/tencss"><button>Codebase</button></a>
+				</div>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="row row-centered container">
+		<div class="col-10">
+			<h2 class="centered">Building Dreams Garage</h2>
+		</div>
+		<div class="col-10 lg-col-4">
+			<div class="card">
+				<div id='slider'  class='card-image'>
+					<img src="./0644.jpeg">
+					<img src="./0663.jpeg">
+					<img src="./0721.jpeg">
+					<img src="./0760.jpeg">
+					<img src="./0917.jpeg">
+					<img src="./0941.jpeg">
+					<img src="./0978.jpeg">
+					<img src="./1024.jpeg">
+					<img src="./1123.jpeg">
+					<img src="./1510.jpeg">
+					<img src="./2433.jpeg">
+					<img src="./2525.jpeg">
+					<img src="./3132.jpeg">
+					<img src="./3235.jpg">
+				</div>
+				<div class="card-footer-buttons two-buttons">
+					<button id="prev">Previous</button>
+					<button id="next">Next</button>
+				</div>
+			</div>
+	    </div>
+	    <div class="col-10 lg-col-5">
+	      	  <p>
+	      	  	Building Dreams Garage is a my YouTube channel that followed my progress building a drift car from the ground up. It started with a $200 shell of a 1987 Mazda RX7 in October of 2019. The car made it's first track day in June of 2021. You can check out the previous vlogs and the upcoming ones here: <a href="https://www.youtube.com/buildingdreamsgarage">Building Dreams Gargae</a>
+	      	  </p>
+	    </div>
+	</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('#slider').slick({
+			arrows: false
+		});
+	})
+	$(document).on('click', '#prev', function(){
+		$('#slider').slick('slickPrev')
+	})
+	$(document).on('click', '#next', function(){
+		$('#slider').slick('slickNext')
+	})
+</script>
+
+
+</html>
